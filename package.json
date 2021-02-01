@@ -1,0 +1,66 @@
+{
+  "name": "zheyearhey",
+  "version": "1.2.2",
+  "description": "indiv doc",
+  "main": "index.js",
+  "scripts": {
+    "clear": "rm -rf dist 0.css 0.js 1.css 1.js 2.css 2.js 3.css 3.js 4.css 4.js 5.css 5.js main.css main.js",
+    "start": "npm run clear && webpack --watch --mode=development & nodemon app.js",
+    "build": "npm run clear && webpack --env=production --mode=production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaLiLongJi/zheyearhey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaLiLongJi/zheyearhey/issues"
+  },
+  "homepage": "https://github.com/DimaLiLongJi/zheyearhey#readme",
+  "dependencies": {
+    "@types/highlight.js": "^9.12.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "easier-cookie": "^1.1.1",
+    "highlight.js": "^9.12.0",
+    "indiv": "^1.2.1",
+    "rxjs": "^6.3.2",
+    "swiper": "^5.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@types/swiper": "^5.4.1",
+    "autoprefixer": "^9.6.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "css-loader": "^1.0.1",
+    "ejs": "^2.6.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-import-resolver-webpack": "^0.10.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.9.1",
+    "express": "^4.16.3",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "nodemon": "^1.17.5",
+    "object-assign": "^4.1.1",
+    "parcel-bundler": "^1.10.3",
+    "postcss": "^7.0.17",
+    "postcss-loader": "^3.0.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

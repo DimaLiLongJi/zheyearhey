@@ -1,0 +1,111 @@
+@import "../../images/page1";
+@import "~swiper/css/swiper.min.css";
+
+.app-container {
+  .swiper-container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .password {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: 10;
+      .model-bg {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 11;
+        background-color: black;
+        opacity: 0.5;
+      }
+      .password-content {
+        position: absolute;
+        top: 360px;
+        left: 85px;
+        z-index: 12;
+        width: 580px;
+        height: 462px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        p {
+          width: 580px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 48px;
+          font-weight: 800;
+          color: #F25B00;
+          text-align: center;
+        }
+        input {
+          outline: none;
+          margin: 0;
+          padding: 0;
+          border: none;
+          width: 394px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 50px;
+          font-weight: bold;
+          color: #333333;
+        }
+        .btn {
+          margin: 0 auto;
+          width: 460px;
+          height: 88px;
+          line-height: 88px;
+          background: #F25B00;
+          border-radius: 10px;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 36px;
+        }
+      }
+    }  
+
+    .content {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+    }
+
+    .content-1 {
+      background-image: @page1Bg;
+      padding-top: 50vw;
+
+      .love-bg {
+        width: 472px;
+        height: 164px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: @page1-1;
+        margin: 0 auto 300px;
+      }
+
+      .text {
+        width: 100vw;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+
+}

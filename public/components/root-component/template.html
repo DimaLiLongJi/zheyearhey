@@ -1,0 +1,30 @@
+<div class="app-container">
+  <div class="swiper-container" id="swiper-ref">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-no-swiping">
+        <div class="password" nv-if-not="hasChecked">
+          <div class="model-bg"></div>
+          <div class="password-content">
+            <p>{{tipText}}</p>
+            <input nv-model="password" />
+            <div class="btn" nv-on:click="checkPassword()">确定</div>
+          </div>
+        </div>
+        <div class="content content-1">
+          <div class="love-bg" nv-on:click="goNext()"></div>
+          <p class="text">我 想 牵 着 你 的 手 一 直 走</p>
+          <p class="text">---------------------------------------------</p>
+          <p class="text">I want to hold your hands forever</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-1">
+          <div class="love-bg" nv-on:click="goNext()"></div>
+          <p class="text">我 想 牵 着 你 的 手 一 直 走</p>
+          <p class="text">---------------------------------------------</p>
+          <p class="text">I want to hold your hands forever</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
