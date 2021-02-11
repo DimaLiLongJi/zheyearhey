@@ -55,8 +55,8 @@ export class RootComponent implements AfterMount {
         });
         const that = this;
         this.swiper.on("slideChangeTransitionEnd", function(){
-            if (this.activeIndex === 0) that.swiper.allowSlideNext = false;
-            else that.swiper.allowSlideNext = true;
+            if (this.activeIndex === 0) that.swiper.allowSlidePrev = false;
+            else that.swiper.allowSlidePrev = true;
             that.activeIndex = this.activeIndex;
 
             that.resetPageShow();
