@@ -10,19 +10,177 @@
             <div class="btn" nv-on:click="checkPassword()">确定</div>
           </div>
         </div>
-        <div class="content content-1">
+        <div class="content content-0 animation-fade" nv-if="showPage0">
           <div class="love-bg" nv-on:click="goNext()"></div>
-          <p class="text">我 想 牵 着 你 的 手 一 直 走</p>
+          <p class="text">与 宝 宝 在 一 起 的 2020</p>
           <p class="text">---------------------------------------------</p>
-          <p class="text">I want to hold your hands forever</p>
+          <p class="text">год 2020 с тобой</p>
+          <div class="go-next" nv-on:click="goNext()"></div>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="content content-1">
-          <div class="love-bg" nv-on:click="goNext()"></div>
-          <p class="text">我 想 牵 着 你 的 手 一 直 走</p>
-          <p class="text">---------------------------------------------</p>
-          <p class="text">I want to hold your hands forever</p>
+        <div class="content content-1 animation-fade" nv-if="showPage1">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger">19年圣诞节去了你家陪你</p>
+            <p class="animation-bigger">1月份，你在家我在家</p>
+            <p class="animation-bigger">外面的寒风，吹不散我们的关系</p>
+            <p class="animation-bigger">我日夜祈祷，祈祷你的考研初试成绩</p>
+            <p class="animation-bigger">你也在家焦急地等待</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-2 animation-fade" nv-if="showPage2">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger1 title">＃我结婚的时候你一定要来，不然没有新娘很尴尬。</p>
+            <p class="animation-bigger">2月份到了，你顺利通过了初试</p>
+            <p class="animation-bigger">过年了，情人节了</p>
+            <p class="animation-bigger">我没给你惊喜</p>
+            <p class="animation-bigger">疫情也隔绝了我们</p>
+            <p class="animation-bigger">我想你了</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-3 animation-fade" nv-if="showPage3">
+          <div class="img-content animation-fade2">
+            <div class="img1"></div>
+          </div>
+          <div class="text">
+            <p class="animation-bigger text-1">3月份，春天到了</p>
+            <p class="animation-bigger text-2">想你一起看不同的风景</p>
+            <p class="animation-bigger text-3">风景不好看不要紧</p>
+            <p class="animation-bigger text-4">你好看</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-4 animation-fade" nv-if="showPage4">
+          <div class="img1 animation-fade2"></div>
+          <div class="img2"></div>
+          <div class="text">
+            <p class="animation-bigger text-1">4月，春末</p>
+            <p class="animation-bigger text-2">你在紧张地复试，决定好了去处</p>
+            <p class="animation-bigger text-3">我也没有放松</p>
+            <p class="animation-bigger text-4">一切安好，我想你</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-5 animation-fade" nv-if="showPage5">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-1">5月，夏初</p>
+            <p class="animation-bigger text-4">一转眼半年没见面了</p>
+            <p class="animation-bigger text-3">决定了去处的你</p>
+            <p class="animation-bigger text-4">出来望风</p>
+            <p class="animation-bigger text-2">6个月好久不见</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-6 animation-fade" nv-if="showPage6">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-3">6月，夏至</p>
+            <p class="animation-bigger text-4">一转眼一年的一半都过去了</p>
+            <p class="animation-bigger text-3">等待开学的你</p>
+            <p class="animation-bigger text-4">是不是也在想我</p>
+            <p class="animation-bigger text-2">希望你一切都好</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-7 animation-fade" nv-if="showPage7">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-1">7月，炎热</p>
+            <p class="animation-bigger text-2">看着走出上半年阴霾的你</p>
+            <p class="animation-bigger text-3">看着等待开学的你</p>
+            <p class="animation-bigger text-4">这么久的陪伴</p>
+            <p class="animation-bigger text-2">没有白费</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-8 animation-fade" nv-if="showPage8">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-4">8月，我来了</p>
+            <p class="animation-bigger text-1">久违的年假</p>
+            <p class="animation-bigger text-3">虽然开始吵了架</p>
+            <p class="animation-bigger text-4">但是不影响我想见你的心情</p>
+            <p class="animation-bigger text-2">好久不见！</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-9 animation-fade" nv-if="showPage9">
+          <div class="img1 animation-fade2"></div>
+          <div class="img2 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-4">9月，你来了</p>
+            <p class="animation-bigger text-3">开学前带你玩</p>
+            <p class="animation-bigger text-4">去学校找你摔了跤</p>
+            <p class="animation-bigger text-3">才发现有你和我共度的日子</p>
+            <p class="animation-bigger text-4">这才叫生活 才是人生</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-10 animation-fade" nv-if="showPage10">
+          <div class="img1 animation-fade2"></div>
+          <div class="img2 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-2">10月，小长假</p>
+            <p class="animation-bigger text-3">很遗憾封校了没来几天</p>
+            <p class="animation-bigger text-2">带你吃吃喝喝</p>
+            <p class="animation-bigger text-3">天气渐冷</p>
+            <p class="animation-bigger text-4">注意保暖！</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-11 animation-fade" nv-if="showPage11">
+          <div class="img1 animation-fade2"></div>
+          <div class="img2 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-2">11月，下大雪啦</p>
+            <p class="animation-bigger text-3">你好久没见过雪了吧</p>
+            <p class="animation-bigger text-2">看你高兴的傻样子</p>
+            <p class="animation-bigger text-3">到了咱家</p>
+            <p class="animation-bigger text-4">感受暖气！</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-12 animation-fade" nv-if="showPage12">
+          <div class="img1 animation-fade2"></div>
+          <div class="text">
+            <p class="animation-bigger text-2">12月</p>
+            <p class="animation-bigger text-3">就像对所有美好的描述</p>
+            <p class="animation-bigger text-2">你就是我生命中最美的意外</p>
+            <p class="animation-bigger text-3">感谢你对我满满的陪伴与关爱</p>
+            <p class="animation-bigger text-4">感谢因为你 我才有了一个家</p>
+          </div>
+          <div class="go-next" nv-on:click="goNext()"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content content-13 animation-fade" nv-if="showPage13">
         </div>
       </div>
     </div>
