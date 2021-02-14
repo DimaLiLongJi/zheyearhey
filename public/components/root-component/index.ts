@@ -71,7 +71,7 @@ export class RootComponent implements AfterMount {
     }
 
     public checkPassword() {
-        if (this.password === "111") {
+        if (this.password === "我爱宝宝") {
             this.hasChecked = true;
         } else {
             this.hasChecked = false;
